@@ -3,7 +3,7 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 
 const SearchBar = () => {
   return (
-    <div className="relative">
+    <div className="relative md:block hidden">
       <input
         type="text"
         placeholder="Search"

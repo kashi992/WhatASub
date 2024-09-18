@@ -12,6 +12,9 @@
   color: rgba(255, 255, 255, 0.87);
   background-color: #ffffff;
 }
+html.navbar-open{
+  overflow: hidden;
+}
 .container{
   max-width: 1290px;
   width: 100%;
