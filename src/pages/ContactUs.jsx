@@ -4,8 +4,6 @@ import Header from "../components/Header";
 const ContactUs = () => {
   return (
     <>
-      <Header />
-
       <div className="bg-[#f1e1c8] p-6">
         <h1 className="text-4xl font-bold mb-6 text-black">
           Make Your First Order and <span className="text-[#00A500]">Get 50% OFF</span>

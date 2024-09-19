@@ -67,9 +67,9 @@ const Header = () => {
         <nav className="hidden lg:flex xl:space-x-14 space-x-8">
           {/* Replace <a> with <Link> and maintain Tailwind styles */}
           <Link
-            to="/Home"
-            className={`nav-link text-[#0000009E] hover:text-[#2AC438] hover:font-medium ${
-              location.pathname === "/Home"
+            to="/"
+            className={`nav-link text-[#0000009E] hover:text-[#2AC438]  ${
+              location.pathname === "/"
                 ? "text-[#2AC438] font-bold border-b-[1px] border-[#2AC438]"
                 : "font-normal"
             }`}
@@ -78,7 +78,7 @@ const Header = () => {
           </Link>
           <Link
             to="/Menu"
-            className={`nav-link text-[#0000009E] hover:text-[#2AC438] hover:font-medium ${
+            className={`nav-link text-[#0000009E] hover:text-[#2AC438]  ${
               location.pathname === "/Menu"
                 ? "text-[#2AC438] font-bold border-b-[1px] border-[#2AC438]"
                 : "font-normal"
@@ -88,7 +88,7 @@ const Header = () => {
           </Link>
           <Link
             to="/About"
-            className={`nav-link text-[#0000009E] hover:text-[#2AC438] hover:font-medium ${
+            className={`nav-link text-[#0000009E] hover:text-[#2AC438]  ${
               location.pathname === "/About"
                 ? "text-[#2AC438] font-bold border-b-[1px] border-[#2AC438]"
                 : "font-normal"
@@ -98,7 +98,7 @@ const Header = () => {
           </Link>
           <Link
             to="/ContactUs"
-            className={`nav-link text-[#0000009E] hover:text-[#2AC438] hover:font-medium ${
+            className={`nav-link text-[#0000009E] hover:text-[#2AC438]  ${
               location.pathname === "/ContactUs"
                 ? "text-[#2AC438] font-bold border-b-[1px] border-[#2AC438]"
                 : "font-normal"
@@ -128,21 +128,21 @@ const Header = () => {
               fill="none"
               viewBox="0 0 24 24"
               stroke="#000"
-              class="w-6 h-6"
+              className="w-6 h-6"
             >
               <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
                 d="M6 18L18 6M6 6l12 12"
               />
             </svg>
           </div>
           <Link
-            to="/Home"
+            to="/"
             onClick={toggleMenu} // Close menu after click
-            className={`nav-link text-[#0000009E] hover:text-[#2AC438] hover:font-medium ${
-              location.pathname === "/Home" ? "text-[#2AC438] font-bold" : ""
+            className={`nav-link text-[#0000009E] hover:text-[#2AC438]  ${
+              location.pathname === "/" ? "text-[#2AC438] font-bold" : ""
             }`}
           >
             Home
@@ -150,7 +150,7 @@ const Header = () => {
           <Link
             to="/Menu"
             onClick={toggleMenu} // Close menu after click
-            className={`nav-link text-[#0000009E] hover:text-[#2AC438] hover:font-medium ${
+            className={`nav-link text-[#0000009E] hover:text-[#2AC438]  ${
               location.pathname === "/Menu" ? "text-[#2AC438] font-bold" : ""
             }`}
           >
@@ -159,7 +159,7 @@ const Header = () => {
           <Link
             to="/About"
             onClick={toggleMenu} // Close menu after click
-            className={`nav-link text-[#0000009E] hover:text-[#2AC438] hover:font-medium ${
+            className={`nav-link text-[#0000009E] hover:text-[#2AC438]  ${
               location.pathname === "/About" ? "text-[#2AC438] font-bold" : ""
             }`}
           >
@@ -168,7 +168,7 @@ const Header = () => {
           <Link
             to="/ContactUs"
             onClick={toggleMenu} // Close menu after click
-            className={`nav-link text-[#0000009E] hover:text-[#2AC438] hover:font-medium ${
+            className={`nav-link text-[#0000009E] hover:text-[#2AC438]  ${
               location.pathname === "/ContactUs"
                 ? "text-[#2AC438] font-bold"
                 : ""

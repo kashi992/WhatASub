@@ -1,10 +1,23 @@
-import Home from "./pages/Home";
+import {
+  BrowserRouter as Router
+} from 'react-router-dom';
+import AppRouter from './pages/AppRouter';
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import "./assets/css/main.css";
+
 
 function App() {
+
   return (
     <>
-      <Home />
+      <Router>
+        <Header />
+        <AppRouter/>
+        <Footer />
+      </Router>
     </>
   );
 }
+
 export default App;

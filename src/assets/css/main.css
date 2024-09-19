@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --fs56: 56px;
+    --fs48: 48px;
+    --fs24: 24px;
+    --fs18: 18px;
+    --fs16: 16px;
+    --p80: 80px;
+}
+.fs56{
+    font-size: var(--fs56);
+}
+.fs48{
+    font-size: var(--fs48);
+}
+.fs24{
+    font-size: var(--fs24);
+}
+.fs18{
+    font-size: var(--fs18);
+}
+.fs16{
+    font-size: var(--fs16);
+}
+.py80{
+    padding-top: var(--p80);
+    padding-bottom: var(--p80);
+}
+body{
+    font-weight: 400;
+    line-height: 1.2;
+    font-family: "Roboto", sans-serif;
+    background-color: #ffffff;
+    font-size: var(--fs16);
+}
+body,
+html {
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:focus-visible {
+    outline: none;
+}
+
+input:focus-visible {
+    outline: none;
+}
+textarea:focus-visible {
+    outline: none;
+}
+
+ul {
+    list-style: none;
+}
+html.navbar-open {
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1290px !important;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 16px;
+}
+.fw400{
+    font-weight: 400 !important;
+}
+
+@media screen and (max-width: 1370px) {
+    .container {
+        max-width: 1190px !important;
+    }
+    :root {
+        --fs56: 42px;
+        --fs48: 38px;
+    }
+}
+
+@media screen and (max-width: 1198.99px) {
+    .container {
+        padding: 0 10px;
+    }
+}

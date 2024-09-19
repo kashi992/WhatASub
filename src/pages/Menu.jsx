@@ -1,11 +1,9 @@
 import React from "react";
-import Header from "../components/Header";
 import MenuItem from "../components/MenuItem";
 import img1 from "../assets/ImagesA/menu_items/VeggieSub.png";
 import img2 from "../assets/ImagesA/menu_items/ItalianSub.png";
 import img3 from "../assets/ImagesA/menu_items/MeatballSub.png";
 import img4 from "../assets/ImagesA/menu_items/GrilledCheese.png";
-import Footer from "../components/Footer";
 const veggieArr = [
   {
     img: img1,
@@ -127,8 +125,6 @@ const meatballArr = [
 function Menu() {
   return (
     <>
-      <Header />
-
       <div className="xl:py-20 py-14">
         <div className="container">
           <h1 className="min-[1370px]:text-[56px] md:text-[45px] text-[35px] text-center font-bold md:mb-10 mb-6 leading-none text-black">
@@ -181,8 +177,6 @@ function Menu() {
           </div>
         </div>
       </div>
-
-      <Footer/>
     </>
   );
 }

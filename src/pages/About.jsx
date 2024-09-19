@@ -45,8 +45,6 @@ const veggieArr = [
 const About = () => {
   return (
     <>
-      <Header />
-
       <ContentImgRow
         className="bg-[#f1e1c8] pt-[38px] md:pb-[112px] pb-4"
         title="The What-a-Sub Story"
@@ -94,8 +92,6 @@ const About = () => {
         </div>
        
       </section>
-
-      <Footer />
     </>
   );
 };
