@@ -35,3 +35,17 @@
                         "a a a c c"                        
     ;
 }
+
+@media screen and (max-width: 575px) {
+    .galleryWrap{
+        grid-template-areas: "a a" "b c" 
+        ;
+    }
+    .galleryWrap div img{
+        min-height: 115px;
+        object-fit: cover;
+    }
+    .BtnWrap svg{
+        width: 16px;
+    }
+}

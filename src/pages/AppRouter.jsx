@@ -5,7 +5,7 @@ import {
 } from 'react-router-dom';
 import Home from './home/Home';
 import About from './About';
-import ContactUs from './ContactUs';
+import ContactUs from './contact/ContactUs';
 import Menu from './Menu';
 
 const AppRouter = () => {

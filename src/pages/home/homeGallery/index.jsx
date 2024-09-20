@@ -15,7 +15,7 @@ const HomeGallery = () => {
           </h2>
           <Link
             to=""
-            className="h-[56px] BtnWrap px-9 fs24 text-[#FBB03B] fw400 gap-4 w-fit rounded-[67px] font-medium flex justify-center items-center"
+            className="lg:h-[56px] md:h-[50px] h-[42px] BtnWrap lg:px-9 md:px-6 px-4 fs24 text-[#FBB03B] fw400 lg:gap-4 md:gap-2 gap-1 w-fit rounded-[67px] font-medium flex justify-center items-center"
           >
             See more
             <svg
@@ -42,7 +42,7 @@ const HomeGallery = () => {
             </svg>
           </Link>
         </div>
-        <div className="grid gap-[35px] galleryWrap">
+        <div className="grid xl:gap-[35px] md:gap-5 gap-3 galleryWrap">
           <div style={{ gridArea: "a" }}>
             <img src={new1} alt="" className="w-full h-full rounded-[16px]" />
           </div>

@@ -99,11 +99,26 @@ html.navbar-open {
     :root {
         --fs56: 42px;
         --fs48: 38px;
+        --fs18: 16px;
     }
 }
 
 @media screen and (max-width: 1198.99px) {
     .container {
         padding: 0 10px;
+    }
+}
+@media screen and (max-width: 991.99px) {
+    :root {
+        --fs56: 32px;
+        --fs48: 26px;
+        --fs24: 18px;
+        --p80: 50px;
+    }
+}
+@media screen and (max-width: 575px) {
+    :root {
+        --fs56: 26px;
+        --fs24: 16px;
     }
 }

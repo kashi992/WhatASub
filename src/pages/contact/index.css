@@ -1,0 +1,67 @@
+.contactFrom{
+    display: grid;
+    grid-template-areas: "a b"
+                        "c c" "d d" "e e" "f f" "g g"
+     ;
+    gap: 24px;
+}
+.checkboxWrap{
+    position: relative;
+}
+.checkboxWrap input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.checkboxWrap .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #fff;
+    border-radius: 6px;
+}
+
+.checkboxWrap input:checked ~ .checkmark {
+    background-color: #00A500;
+}
+.checkboxWrap .checkmark::after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.checkboxWrap input:checked ~ .checkmark::after {
+    display: block;
+}
+.checkboxWrap .checkmark::after {
+    left: 7px;
+    top: 3px;
+    width: 7px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+#root{
+display: flex;
+flex-direction: column;
+min-height: 100vh;
+}
+
+@media screen and (max-width: 575px) {
+    .contactFrom{
+        grid-template-areas: "a" "b"
+                            "c" "d" "e" "f" "g" ;
+        gap: 20px;
+    }
+}
